@@ -1,2 +1,23 @@
 server:
    port: 8081
+spring:
+  application:
+    name: identity-service
+  #database connection info
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dxcsynergyIdentity
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cloud:
+        config:
+          uri= ${CONFIG_CLOUD_SERVICE_URL:http://localhost:8888}:
+
+
+
+
