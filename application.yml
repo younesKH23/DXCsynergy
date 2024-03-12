@@ -1,0 +1,10 @@
+  #database connection info
+  datasource:
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dxcsynergyidentity
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
