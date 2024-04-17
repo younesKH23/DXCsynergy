@@ -1,9 +1,9 @@
 server:
-   port: 8083
+  port: 8083
 spring:
-   datasource:
-        url: jdbc:postgresql://localhost:5432/dxcsynergynotification
-   kafka:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dxcsynergynotification
+  kafka:
     consumer:
       bootstrap-servers: localhost:9092
       group-id: dxc-group
@@ -12,5 +12,10 @@ spring:
       auto-offset-reset: earliest
       enable-auto-commit: false
       properties:
-        spring.json.trusted.packages: "*"
-
+        spring:
+          json:
+            trusted:
+              packages: "*"
+          type:
+            mapping: org.dxc.notificationservice.notification.dto.UserResponseDTO
+    
