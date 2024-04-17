@@ -3,7 +3,7 @@ server:
 spring:
    datasource:
         url: jdbc:postgresql://localhost:5432/dxcsynergynotification
-    kafka:
+   kafka:
     consumer:
       bootstrap-servers: localhost:9092
       group-id: dxc-group
