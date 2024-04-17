@@ -3,3 +3,12 @@ server:
 spring:
    datasource:
         url: jdbc:postgresql://localhost:5432/dxcsynergynotification
+   kafka:
+       consumer:
+         bootstrap-servers: localhost:9092
+         group-id: inscription-group
+         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+         value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+         properties:
+           spring.json.trusted.packages: "*"
+
