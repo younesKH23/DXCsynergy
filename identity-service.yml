@@ -1,5 +1,4 @@
-server:
-   port: 8081
+## "i removed server.port and define it in configuration intellij to enable runnig multile instances for Load balancing ^_^ "
 spring:
    datasource:
         url: jdbc:postgresql://localhost:5432/dxcsynergyidentity
