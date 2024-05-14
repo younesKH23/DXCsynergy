@@ -1,5 +1,10 @@
-server:
-   port: 8085
-data:
+spring:
+  application:
+    name: forum-service
+  data:
     mongodb:
       uri: mongodb://localhost:27017/DXCSynergy
+
+server:
+  port: 8085
+
